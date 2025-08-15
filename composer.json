@@ -1,13 +1,13 @@
 {
-    "name": "yourname/shopify-graphql-sdk",
+    "name": "webtize/shopify-graphql-sdk",
     "description": "Modern PHP SDK for Shopify GraphQL Admin API",
     "type": "library",
     "keywords": ["shopify", "graphql", "api", "sdk", "e-commerce"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your.email@example.com"
+            "name": "Jigarkumar Patel",
+            "email": "jigar@webtize.com.au"
         }
     ],
     "require": {
