@@ -18,7 +18,7 @@ A modern, PSR-compliant PHP SDK for interacting with Shopify's GraphQL Admin API
 Install via Composer:
 
 ```bash
-composer require yourname/shopify-graphql-sdk
+composer require webtize/shopify-graphql-sdk:@dev
 ```
 
 For HTTP client support, also install one of the following:

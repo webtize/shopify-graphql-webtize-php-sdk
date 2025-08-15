@@ -44,7 +44,7 @@
         "phpstan": "phpstan analyse src --level=8",
         "cs-fix": "php-cs-fixer fix"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true
