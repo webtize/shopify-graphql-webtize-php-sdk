@@ -39,7 +39,7 @@ composer require php-http/curl-client php-http/message
 ### Basic Setup
 
 ```php
-use ShopifyGraphQL\Resources\ClientFactory;
+use ShopifyGraphQL\ClientFactory;
 
 // Simple setup with auto-discovery
 $client = ClientFactory::create(
@@ -58,7 +58,7 @@ if ($response->isSuccessful()) {
 ### Using Resource Helpers
 
 ```php
-use ShopifyGraphQL\Resources\Products;
+use ShopifyGraphQL\Products;
 
 $products = new Products($client);
 
@@ -119,7 +119,7 @@ $client = ClientFactory::create(
 ### Custom HTTP Client
 
 ```php
-use GuzzleHttp\Client as GuzzleClient;use Http\Adapter\Guzzle7\Client as GuzzleAdapter;use Nyholm\Psr7\Factory\Psr17Factory;use ShopifyGraphQL\Resources\ClientFactory;
+use GuzzleHttp\Client as GuzzleClient;use Http\Adapter\Guzzle7\Client as GuzzleAdapter;use Nyholm\Psr7\Factory\Psr17Factory;use ShopifyGraphQL\ClientFactory;
 
 $httpClient = new GuzzleAdapter(new GuzzleClient([
     'timeout' => 60,
@@ -140,9 +140,7 @@ $client = ClientFactory::createWithHttpClient(
 ### Error Handling
 
 ```php
-use ShopifyGraphQL\Exceptions\AuthenticationException;
-use ShopifyGraphQL\Exceptions\RateLimitException;
-use ShopifyGraphQL\Exceptions\ShopifyGraphQLException;
+use ShopifyGraphQL\AuthenticationException;use ShopifyGraphQL\RateLimitException;use ShopifyGraphQL\ShopifyGraphQLException;
 
 try {
     $response = $client->query($query);

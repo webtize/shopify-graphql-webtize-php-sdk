@@ -2,11 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ShopifyGraphQL\Resources;
-
-use ShopifyGraphQL\ShopifyGraphQLClient;
-use ShopifyGraphQL\GraphQLResponse;
-use ShopifyGraphQL\QueryBuilder;
+namespace ShopifyGraphQL;
 
 /**
  * Product resource helper

@@ -7,9 +7,6 @@ namespace ShopifyGraphQL;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;
-use ShopifyGraphQL\Exceptions\ShopifyGraphQLException;
-use ShopifyGraphQL\Exceptions\AuthenticationException;
-use ShopifyGraphQL\Exceptions\RateLimitException;
 
 /**
  * Shopify GraphQL API Client

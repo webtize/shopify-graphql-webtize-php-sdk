@@ -1,10 +1,11 @@
 <?php
 
+namespace ShopifyGraphQL;
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use ShopifyGraphQL\ClientFactory;
+use ShopifyGraphQL\Products;
 use ShopifyGraphQL\QueryBuilder;
-use ShopifyGraphQL\Resources\ClientFactory;
-use ShopifyGraphQL\Resources\Products;
 
 // Initialize the client
 $client = ClientFactory::create(
@@ -95,11 +96,11 @@ try {
         }
     }
 
-} catch (\ShopifyGraphQL\Exceptions\AuthenticationException $e) {
+} catch (ShopifyGraphQL\AuthenticationException $e) {
     echo "Authentication error: " . $e->getMessage() . "\n";
-} catch (\ShopifyGraphQL\Exceptions\RateLimitException $e) {
+} catch (ShopifyGraphQL\RateLimitException $e) {
     echo "Rate limit exceeded. Retry after: " . $e->getRetryAfter() . " seconds\n";
-} catch (\ShopifyGraphQL\Exceptions\ShopifyGraphQLException $e) {
+} catch (ShopifyGraphQL\ShopifyGraphQLException $e) {
     echo "Shopify API error: " . $e->getMessage() . "\n";
     if ($e->hasGraphqlErrors()) {
         echo "GraphQL errors: " . json_encode($e->getGraphqlErrors()) . "\n";

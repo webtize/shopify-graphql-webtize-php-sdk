@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ShopifyGraphQL\Exceptions;
+namespace ShopifyGraphQL;
+
+
+use Exception;
 
 /**
  * Exception thrown when rate limits are exceeded

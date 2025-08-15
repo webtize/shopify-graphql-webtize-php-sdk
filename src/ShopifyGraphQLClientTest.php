@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ShopifyGraphQL\Tests;
+namespace ShopifyGraphQL;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Client\ClientInterface;
@@ -11,8 +11,6 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamFactoryInterface;
 use Psr\Http\Message\StreamInterface;
-use ShopifyGraphQL\GraphQLResponse;
-use ShopifyGraphQL\ShopifyGraphQLClient;
 
 /**
  * Basic test suite for ShopifyGraphQLClient
