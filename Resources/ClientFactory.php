@@ -2,13 +2,14 @@
 
 declare(strict_types=1);
 
-namespace ShopifyGraphQL;
+namespace ShopifyGraphQL\Resources;
 
+use Http\Discovery\Psr17FactoryDiscovery;
+use Http\Discovery\Psr18ClientDiscovery;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;
-use Http\Discovery\Psr18ClientDiscovery;
-use Http\Discovery\Psr17FactoryDiscovery;
+use ShopifyGraphQL\ShopifyGraphQLClient;
 
 /**
  * Factory for creating ShopifyGraphQLClient instances

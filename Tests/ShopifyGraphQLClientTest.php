@@ -5,15 +5,14 @@ declare(strict_types=1);
 namespace ShopifyGraphQL\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShopifyGraphQL\ShopifyGraphQLClient;
-use ShopifyGraphQL\GraphQLResponse;
-use ShopifyGraphQL\ClientFactory;
 use Psr\Http\Client\ClientInterface;
+use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\StreamFactoryInterface;
 use Psr\Http\Message\StreamInterface;
+use ShopifyGraphQL\GraphQLResponse;
+use ShopifyGraphQL\ShopifyGraphQLClient;
 
 /**
  * Basic test suite for ShopifyGraphQLClient

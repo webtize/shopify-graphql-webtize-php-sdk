@@ -2,9 +2,9 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use ShopifyGraphQL\ClientFactory;
-use ShopifyGraphQL\Resources\Products;
 use ShopifyGraphQL\QueryBuilder;
+use ShopifyGraphQL\Resources\ClientFactory;
+use ShopifyGraphQL\Resources\Products;
 
 // Initialize the client
 $client = ClientFactory::create(

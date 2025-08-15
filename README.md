@@ -39,7 +39,7 @@ composer require php-http/curl-client php-http/message
 ### Basic Setup
 
 ```php
-use ShopifyGraphQL\ClientFactory;
+use ShopifyGraphQL\Resources\ClientFactory;
 
 // Simple setup with auto-discovery
 $client = ClientFactory::create(
@@ -119,10 +119,7 @@ $client = ClientFactory::create(
 ### Custom HTTP Client
 
 ```php
-use ShopifyGraphQL\ClientFactory;
-use GuzzleHttp\Client as GuzzleClient;
-use Http\Adapter\Guzzle7\Client as GuzzleAdapter;
-use Nyholm\Psr7\Factory\Psr17Factory;
+use GuzzleHttp\Client as GuzzleClient;use Http\Adapter\Guzzle7\Client as GuzzleAdapter;use Nyholm\Psr7\Factory\Psr17Factory;use ShopifyGraphQL\Resources\ClientFactory;
 
 $httpClient = new GuzzleAdapter(new GuzzleClient([
     'timeout' => 60,

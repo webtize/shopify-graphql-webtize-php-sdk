@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use ShopifyGraphQL\ClientFactory;
 use ShopifyGraphQL\QueryBuilder;
+use ShopifyGraphQL\Resources\ClientFactory;
 
 /**
  * Advanced usage examples demonstrating complex GraphQL operations
