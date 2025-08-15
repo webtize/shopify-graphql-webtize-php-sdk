@@ -1,0 +1,22 @@
+{
+  "name": "Shopify GraphQL PHP SDK",
+  "version": "1.0.0",
+  "description": "Modern PHP SDK for Shopify GraphQL Admin API",
+  "files": [
+    "src/ShopifyGraphQLClient.php",
+    "src/GraphQLResponse.php",
+    "src/Exceptions/ShopifyGraphQLException.php",
+    "src/Exceptions/AuthenticationException.php",
+    "src/Exceptions/RateLimitException.php",
+    "src/QueryBuilder.php",
+    "src/ClientFactory.php",
+    "src/Resources/Products.php",
+    "composer.json",
+    "examples/basic_usage.php",
+    "examples/advanced_usage.php",
+    "README.md",
+    "tests/ShopifyGraphQLClientTest.php",
+    "phpunit.xml"
+  ],
+  "total_files": 14
+}
